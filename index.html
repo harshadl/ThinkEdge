@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Computing: News & Project Sharing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00274d;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #004d99;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            color: #004d99;
+            margin-top: 20px;
+        }
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .project-list li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d99;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edge Computing: News & Project Sharing</h1>
+        <p>Connect, Learn, and Share Projects on the Future of Edge Computing</p>
+    </header>
+
+    <nav>
+        <a href="#news">News</a>
+        <a href="#projects">Projects</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="news">
+            <h2 class="section-title">Latest News</h2>
+            <p>Stay updated with the latest advancements and trends in Edge Computing.</p>
+            <ul>
+                <li><a href="#">Article 1: Breakthrough in Edge AI</a></li>
+                <li><a href="#">Article 2: NVIDIA Jetson Updates</a></li>
+                <li><a href="#">Article 3: IoT Meets Edge Computing</a></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Student Projects</h2>
+            <p>Explore projects submitted by students and contribute your own!</p>
+            <ul class="project-list">
+                <li>
+                    <h3>Project Title: Smart Traffic Monitoring</h3>
+                    <p>Description: A real-time traffic monitoring system using NVIDIA Jetson Nano.</p>
+                    <a href="#">View Project</a>
+                </li>
+                <li>
+                    <h3>Project Title: Environmental Monitoring</h3>
+                    <p>Description: IoT-enabled sensors for environmental data collection and analysis.</p>
+                    <a href="#">View Project</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2 class="section-title">Resources</h2>
+            <p>Access study materials and guides for learning Edge Computing.</p>
+            <ul>
+                <li><a href="#">Introduction to IoT by Sudip Misra</a></li>
+                <li><a href="#">Fog and Edge Computing by Rajkumar Buyya</a></li>
+                <li><a href="#">NVIDIA Jetson Nano Tutorials</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions or want to share your project? Reach out!</p>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Edge Computing Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
